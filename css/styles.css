@@ -37,7 +37,7 @@ a{
 }
 
 img{
-    max-width: 100%;
+    width: 100%;
 }
 
 .contenedor{
@@ -128,10 +128,6 @@ h3{ font-size: 2.4rem; }
     
 }
 
-.producto__imagen{
-    width: 100%;
-}
-
 .producto__nombre{
     font-size: 3.8rem;
     margin: 0;
@@ -207,13 +203,11 @@ h3{ font-size: 2.4rem; }
     gap: 1rem;
 }
 
-
 @media (min-width: 1024px) {
     .comprar{
         display: flex;
     }    
 }
-
 
 .bloque{
     text-align: center;
@@ -232,4 +226,13 @@ h3{ font-size: 2.4rem; }
 
 .bloque__titulo{
     margin-top: 0;
+}
+
+/** Pagina del producto **/
+@media (min-width: 1024px) {
+    .camisa{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
 }
